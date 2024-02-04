@@ -1,4 +1,4 @@
-package com.b2prashant.jetpackarchitecturecomponents.lifecycleObserver
+package com.b2prashant.jetpackarchitecturecomponents.A_lifecycleObserver.a_withoutParams
 
 import android.util.Log
 import androidx.lifecycle.Lifecycle

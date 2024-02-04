@@ -1,4 +1,4 @@
-package com.b2prashant.jetpackarchitecturecomponents.viewmodel
+package com.b2prashant.jetpackarchitecturecomponents.B_viewModel.b_VM
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity

@@ -1,4 +1,4 @@
-package com.b2prashant.jetpackarchitecturecomponents.viewmodel
+package com.b2prashant.jetpackarchitecturecomponents.B_viewModel.a_noVM
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -7,6 +7,7 @@ import android.util.Log
 import android.view.View
 import android.widget.TextView
 import android.widget.Toast
+import com.b2prashant.jetpackarchitecturecomponents.B_viewModel.b_VM.ViewModelActivity
 import com.b2prashant.jetpackarchitecturecomponents.R
 
 class WithoutViewModelActivity : AppCompatActivity() {

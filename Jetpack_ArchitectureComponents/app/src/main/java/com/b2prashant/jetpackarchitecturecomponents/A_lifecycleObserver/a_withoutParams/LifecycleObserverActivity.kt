@@ -1,4 +1,4 @@
-package com.b2prashant.jetpackarchitecturecomponents.lifecycleObserver
+package com.b2prashant.jetpackarchitecturecomponents.A_lifecycleObserver
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
