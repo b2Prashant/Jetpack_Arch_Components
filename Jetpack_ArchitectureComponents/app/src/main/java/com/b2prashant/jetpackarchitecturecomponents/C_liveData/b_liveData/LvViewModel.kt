@@ -1,4 +1,4 @@
-package com.b2prashant.jetpackarchitecturecomponents.livedata
+package com.b2prashant.jetpackarchitecturecomponents.C_liveData.b_liveData
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
@@ -9,7 +9,7 @@ class LvViewModel: ViewModel() {
     val counterLD : LiveData<Int>
         get() = counterMLD
 
-    private val factMLiveData = MutableLiveData<String>("this is mutable live data")
+    private val factMLiveData = MutableLiveData<String>("this is a Live data pointing to MLD")
     val factLiveData : LiveData<String>
         get() = factMLiveData
 
@@ -18,7 +18,7 @@ class LvViewModel: ViewModel() {
     }
 
     fun updateLiveData() {
-        factMLiveData.value = "Another fact updated"
+        factMLiveData.value = "LD value is update through MLD.value"
     }
 
 }

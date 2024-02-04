@@ -13,31 +13,31 @@
         android:theme="@style/Theme.JetpackArchitectureComponents"
         tools:targetApi="31">
         <activity
-            android:name=".databinding_livedata.using_xm_file.LdDbVmUpdateFromXmlActivity"
+            android:name=".A_lifeCyObs.d_LCyEventObs.LifecycleEventObsActivity"
             android:exported="false" />
         <activity
-            android:name=".databinding_livedata.LiveDataBindingActivity"
+            android:name=".A_lifeCyObs.c_defaultLifeCyObs.DefaultLifeCyObsActivity"
             android:exported="false" />
         <activity
-            android:name=".databinding.DataBindingActivity"
+            android:name=".A_lifeCyObs.b_params.LifeCyObWithParamsActivity"
             android:exported="false" />
         <activity
-            android:name=".livedata.LiveDataActivity"
+            android:name=".C_liveData.b_liveData.LiveDataActivity"
             android:exported="false" />
         <activity
-            android:name=".livedata.MutableLiveDataActivity"
+            android:name=".C_liveData.a_mutableLD.MutableLiveDataActivity"
             android:exported="false" />
         <activity
-            android:name=".vmfactory.ViewModelFactoryActivity"
+            android:name=".B_viewModel.c_vmfactory.ViewModelFactoryActivity"
             android:exported="false" />
         <activity
-            android:name=".viewmodel.ViewModelActivity"
+            android:name=".B_viewModel.b_withVM.ViewModelActivity"
             android:exported="false" />
         <activity
-            android:name=".viewmodel.WithoutViewModelActivity"
+            android:name=".B_viewModel.a_withoutVM.WithoutViewModelActivity"
             android:exported="false" />
         <activity
-            android:name=".lifecycleObserver.LifecycleObserverActivity"
+            android:name=".A_lifeCyObs.a_noParams.LifecycleObserverActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

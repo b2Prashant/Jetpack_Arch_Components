@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".A_lifeCyObs.a_noParams.LifecycleObserverActivity">
+    tools:context=".A_lifeCyObs.d_LCyEventObs.LifecycleEventObsActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -19,19 +19,14 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="16sp"
-            android:gravity="center"
-            android:layout_gravity="center"
-            android:text="Observe Activity and Observer lifecycle events sequence in next Activity" />
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Lifecycle events comparison"
             android:textSize="18sp"
             android:gravity="center"
-            android:layout_gravity="center"
-            android:layout_marginTop="32dp"
-            android:onClick="openLifeCyObWithPrimaryConstructor"/>
+            android:layout_gravity="center_horizontal"
+            android:text="Activity &amp; LifecycleEventObserver -\nLifecycle events sequence" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:src="@drawable/lifecycle_states_events" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

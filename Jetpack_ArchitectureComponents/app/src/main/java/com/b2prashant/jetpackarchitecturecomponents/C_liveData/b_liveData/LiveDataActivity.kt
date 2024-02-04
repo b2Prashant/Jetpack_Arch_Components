@@ -1,10 +1,9 @@
-package com.b2prashant.jetpackarchitecturecomponents.livedata
+package com.b2prashant.jetpackarchitecturecomponents.C_liveData.b_liveData
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
-import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
 import androidx.lifecycle.Observer
@@ -28,7 +27,7 @@ class LiveDataActivity : AppCompatActivity() {
         setContentView(R.layout.activity_live_data)
         Log.d(TAG, "onCreate: LiveDataActivity")
         lvViewModel = ViewModelProvider(this).get(LvViewModel::class.java)
-        Toast.makeText(this, "to secure (mutable) live data from outside ", Toast.LENGTH_LONG).show()
+        Toast.makeText(this, "livedata is Exposed to outside to secure mutable live data from modification", Toast.LENGTH_LONG).show()
 
         //now we need to observe our live data
         lvViewModel.counterLD.observe(this, Observer {

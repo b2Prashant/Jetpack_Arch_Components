@@ -21,14 +21,14 @@
             android:id="@+id/btnNextActivity"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Open LifeCycle Observer Activity"
+            android:text="LifeCycle Observer"
             android:textSize="18sp"
             android:onClick="openLifeCycleObserverActivity" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Open Without ViewModel Activity"
+            android:text="ViewModel"
             android:textSize="18sp"
             android:layout_marginTop="@dimen/dim_16dp"
             android:onClick="openWithoutViewModelActivity" />
@@ -36,29 +36,11 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Open Live Data Activity"
+            android:text="Live Data"
             android:textSize="18sp"
             android:layout_gravity="center"
             android:layout_marginTop="@dimen/dim_16dp"
             android:onClick="openLiveDataActivity" />
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Open DataBinding Activity"
-            android:textSize="18sp"
-            android:layout_gravity="center"
-            android:layout_marginTop="@dimen/dim_16dp"
-            android:onClick="openDataBindingActivity" />
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Open LiveData DataBinding "
-            android:textSize="18sp"
-            android:layout_gravity="center"
-            android:layout_marginTop="@dimen/dim_16dp"
-            android:onClick="openLiveDataBindingActivity" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

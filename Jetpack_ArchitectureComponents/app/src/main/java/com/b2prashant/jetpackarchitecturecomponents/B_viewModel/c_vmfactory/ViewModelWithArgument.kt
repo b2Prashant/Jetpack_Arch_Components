@@ -1,9 +1,9 @@
-package com.b2prashant.jetpackarchitecturecomponents.vmfactory
+package com.b2prashant.jetpackarchitecturecomponents.B_viewModel.c_vmfactory
 
 import androidx.lifecycle.ViewModel
 
 class ViewModelWithArgument(val initialCount : Int): ViewModel() {
-    // here we are receiving value in constructor
+    // here we are receiving value in primary constructor
 
     var count: Int = initialCount
 

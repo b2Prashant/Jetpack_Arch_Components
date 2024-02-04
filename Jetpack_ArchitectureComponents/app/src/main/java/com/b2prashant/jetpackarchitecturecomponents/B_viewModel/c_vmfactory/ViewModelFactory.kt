@@ -1,4 +1,4 @@
-package com.b2prashant.jetpackarchitecturecomponents.vmfactory
+package com.b2prashant.jetpackarchitecturecomponents.B_viewModel.c_vmfactory
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider

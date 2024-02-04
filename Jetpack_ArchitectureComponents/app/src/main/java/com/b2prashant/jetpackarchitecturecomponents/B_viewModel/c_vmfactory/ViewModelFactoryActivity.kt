@@ -1,4 +1,4 @@
-package com.b2prashant.jetpackarchitecturecomponents.vmfactory
+package com.b2prashant.jetpackarchitecturecomponents.B_viewModel.c_vmfactory
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -20,8 +20,10 @@ class ViewModelFactoryActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_view_model_factory)
-        //passing lifecycle owner, ViewModelFactory and ViewModel to ViewProvider to get object of ViewModel
-        viewModelWithArgument = ViewModelProvider(this, ViewModelFactory(initialCount)).get(ViewModelWithArgument::class.java)
+        //getting VM object from ViewModelProvider by providing lifecycle owner &
+        // also ViewModelFactory obj with default or initial value of counter as 100
+        viewModelWithArgument = ViewModelProvider(this, ViewModelFactory(initialCount)).get(
+            ViewModelWithArgument::class.java)
         Log.d(TAG, "ViewModelFactoryActivity onCreate()")
         tvCounter = findViewById(R.id.tvCounter)
         Toast.makeText(this, "Passing initial value to VM using VMFactory", Toast.LENGTH_LONG).show()

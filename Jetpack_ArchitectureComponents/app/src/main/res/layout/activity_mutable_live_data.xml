@@ -4,17 +4,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".livedata.LiveDataActivity">
+    tools:context=".C_liveData.b_liveData.LiveDataActivity">
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:orientation="vertical"
-        android:layout_margin="@dimen/cardview_compat_inset_shadow">
+        android:layout_margin="@dimen/dim_16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="VM with MutableLiveData\MLD extends the functionality of LD by adding methods to modify the stored value."
+            android:textSize="16sp"
+            android:textStyle="bold"
+            />
 
         <TextView
             android:id="@+id/tvCounter"
@@ -22,6 +32,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="0"
+            android:layout_marginTop="48dp"
             android:textSize="20sp"
             android:textStyle="bold"
             />
@@ -32,6 +43,7 @@
             android:layout_height="wrap_content"
             android:text="Increment +"
             android:textSize="18sp"
+            android:layout_marginTop="4dp"
             android:layout_gravity="center"
             android:onClick="incrementCounter" />
 
@@ -51,6 +63,7 @@
             android:layout_height="wrap_content"
             android:text="Update"
             android:textSize="18sp"
+            android:layout_marginTop="4dp"
             android:layout_gravity="center"
             android:onClick="updateFact" />
 
@@ -58,7 +71,7 @@
             android:id="@+id/btnLiveData"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Goto LiveData Activity"
+            android:text="LiveData"
             android:textSize="18sp"
             android:layout_marginTop="32dp"
             android:layout_gravity="center"

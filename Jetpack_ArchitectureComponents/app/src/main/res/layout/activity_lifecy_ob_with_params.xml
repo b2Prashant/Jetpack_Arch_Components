@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".B_viewModel.c_vmfactory.ViewModelFactoryActivity">
+    tools:context=".A_lifeCyObs.b_params.LifeCyObWithParamsActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -14,46 +14,34 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:orientation="vertical"
-        android:layout_margin="16dp">
+        android:padding="@dimen/dim_16dp">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:text="Using ViewModelFactory - to pass data to VM\n passing 100 as initial value for counter"
             android:textSize="16sp"
-            android:textStyle="bold" />
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="Activity &amp; Observer Lifecycle events sequence" />
 
         <TextView
-            android:id="@+id/tvCounter"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="0"
-            android:layout_marginTop="48dp"
-            android:textSize="20sp"
-            android:textStyle="bold" />
-
-        <Button
-            android:id="@+id/btnIncrement"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Increment +"
-            android:textSize="18sp"
+            android:textSize="16sp"
             android:gravity="center"
-            android:layout_marginTop="16dp"
-            android:layout_gravity="center"
-            android:onClick="increaseCounter" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="back to Main Activity"
-            android:textSize="18sp"
             android:layout_marginTop="@dimen/dim_16dp"
             android:layout_gravity="center"
-            android:onClick="goBackToMainActivity" />
+            android:text="OnLifecycleEvent is deprecated, use -\n DefaultLifecycleObserver or LifecycleEventObserver" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DefaultLifecycleObserver"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="32dp"
+            android:onClick="openDefaultLifeCyObActivity"/>
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
