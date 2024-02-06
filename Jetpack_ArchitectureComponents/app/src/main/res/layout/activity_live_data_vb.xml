@@ -4,51 +4,62 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".D_viewBinding.b_liveDataVB.LiveDataVBActivity">
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:padding="@dimen/dim_16dp"
         android:orientation="vertical"
-        android:layout_margin="@dimen/cardview_compat_inset_shadow">
+        android:layout_margin="@dimen/dim_16dp">
 
-        <Button
-            android:id="@+id/btnNextActivity"
-            android:layout_width="match_parent"
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="LifeCycle Observer"
             android:textSize="18sp"
-            android:onClick="openLifeCycleObserverActivity" />
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:text="ViewBinding with LiveData" />
 
-        <Button
+        <ImageView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="ViewModel"
-            android:textSize="18sp"
+            android:layout_height="100dp"
             android:layout_marginTop="@dimen/dim_16dp"
-            android:onClick="openWithoutViewModelActivity" />
+            android:src="@drawable/view_binding003" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/view_binding004" />
+
+        <TextView
+            android:id="@+id/tvQuoteText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dim_16dp"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvQuoteAuthor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:layout_gravity="center_horizontal" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Live Data"
+            android:text="Update Quote"
             android:textSize="18sp"
             android:layout_gravity="center"
             android:layout_marginTop="@dimen/dim_16dp"
-            android:onClick="openLiveDataActivity" />
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="View Binding"
-            android:textSize="18sp"
-            android:layout_gravity="center"
-            android:layout_marginTop="@dimen/dim_16dp"
-            android:onClick="openViewBindingActivity" />
+            android:onClick="updateQuote" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

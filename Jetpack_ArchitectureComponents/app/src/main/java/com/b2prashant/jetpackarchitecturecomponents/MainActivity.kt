@@ -8,6 +8,7 @@ import android.view.View
 import com.b2prashant.jetpackarchitecturecomponents.A_lifeCyObs.a_noParams.LifecycleObserverActivity
 import com.b2prashant.jetpackarchitecturecomponents.C_liveData.a_mutableLD.MutableLiveDataActivity
 import com.b2prashant.jetpackarchitecturecomponents.B_viewModel.a_withoutVM.WithoutViewModelActivity
+import com.b2prashant.jetpackarchitecturecomponents.D_viewBinding.a_vb.MyViewBindingActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -38,6 +39,10 @@ class MainActivity : AppCompatActivity() {
     }
     fun openLiveDataActivity(view: View) {
         startActivity(Intent(this, MutableLiveDataActivity::class.java))
+    }
+
+    fun openViewBindingActivity(view: View) {
+        startActivity(Intent(this, MyViewBindingActivity::class.java))
     }
 
 }
