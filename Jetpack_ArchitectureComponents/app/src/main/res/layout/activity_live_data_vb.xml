@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".D_viewBinding.b_liveDataVB.LiveDataVBActivity">
+    tools:context=".d_viewBinding.b_liveDataVB.LiveDataVBActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -23,7 +23,7 @@
             android:textStyle="bold"
             android:gravity="center"
             android:layout_gravity="center_horizontal"
-            android:text="ViewBinding with LiveData" />
+            android:text="ViewBinding &amp; LiveData" />
 
         <ImageView
             android:layout_width="match_parent"

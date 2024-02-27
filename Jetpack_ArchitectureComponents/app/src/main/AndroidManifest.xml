@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -13,12 +16,18 @@
         android:theme="@style/Theme.JetpackArchitectureComponents"
         tools:targetApi="31">
         <activity
-            android:name=".D_viewBinding.b_liveDataVB.LiveDataVBActivity"
+            android:name=".f_bindgAdaptrs.CustomDBActivity"
             android:exported="false"
-            android:label="@string/title_activity_live_data_vbactivity"
+            android:label="@string/title_activity_custom_dbactivity"
             android:theme="@style/Theme.JetpackArchitectureComponents" />
         <activity
-            android:name=".D_viewBinding.a_vb.MyViewBindingActivity"
+            android:name=".e_dataBindg.d_twow_ldb.LiveDBTwowayActivity"
+            android:exported="false" />
+        <activity
+            android:name=".e_dataBindg.c_twoway.DataBindTwowayActivity"
+            android:exported="false" />
+        <activity
+            android:name=".e_dataBindg.b_onew_ldb.LiveDBOnewayActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
@@ -30,32 +39,46 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".A_lifeCyObs.a_noParams.LifecycleObserverActivity"
+            android:name=".a_lifeCyObs.a_noParams.LifecycleObserverActivity"
             android:exported="false" />
         <activity
-            android:name=".A_lifeCyObs.b_params.LifeCyObWithParamsActivity"
+            android:name=".a_lifeCyObs.b_params.LifeCyObWithParamsActivity"
             android:exported="false" />
         <activity
-            android:name=".A_lifeCyObs.c_defaultLifeCyObs.DefaultLifeCyObsActivity"
+            android:name=".a_lifeCyObs.c_defaultLifeCyObs.DefaultLifeCyObsActivity"
             android:exported="false" />
         <activity
-            android:name=".A_lifeCyObs.d_LCyEventObs.LifecycleEventObsActivity"
+            android:name=".a_lifeCyObs.d_LCyEventObs.LifecycleEventObsActivity"
             android:exported="false" />
         <activity
-            android:name=".B_viewModel.a_withoutVM.WithoutViewModelActivity"
+            android:name=".b_viewModel.a_withoutVM.WithoutViewModelActivity"
             android:exported="false" />
         <activity
-            android:name=".B_viewModel.b_withVM.ViewModelActivity"
+            android:name=".b_viewModel.b_withVM.ViewModelActivity"
             android:exported="false" />
         <activity
-            android:name=".B_viewModel.c_vmfactory.ViewModelFactoryActivity"
+            android:name=".b_viewModel.c_vmfactory.ViewModelFactoryActivity"
             android:exported="false" />
         <activity
-            android:name=".C_liveData.a_mutableLD.MutableLiveDataActivity"
+            android:name=".c_liveData.a_mutableLD.MutableLiveDataActivity"
             android:exported="false" />
         <activity
-            android:name=".C_liveData.b_liveData.LiveDataActivity"
+            android:name=".c_liveData.b_liveData.LiveDataActivity"
             android:exported="false" />
+        <activity
+            android:name=".d_viewBinding.a_vb.MyViewBindingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".d_viewBinding.b_liveDataVB.LiveDataVBActivity"
+            android:exported="false"
+            android:label="@string/title_activity_live_data_vbactivity"
+            android:theme="@style/Theme.JetpackArchitectureComponents" />
+        <activity
+            android:name=".d_viewBinding.E_dataBinding.DataBindgOneWActivity"
+            android:exported="false" />
+       <!-- <activity
+            android:name=".a_lifeCyObs.LiveDBActivity"
+            android:exported="false" />-->
     </application>
 
 </manifest>

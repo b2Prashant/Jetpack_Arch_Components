@@ -1,3 +1,3 @@
 package com.b2prashant.jetpackarchitecturecomponents
 
-data class Quote(val quote: String, val author: String)
+data class Quote(val quoteText: String, val author: String)

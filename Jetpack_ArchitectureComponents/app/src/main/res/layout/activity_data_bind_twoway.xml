@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="quote2"
+            type="com.b2prashant.jetpackarchitecturecomponents.e_dataBindg.c_twoway.Quote2" />
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_margin="@dimen/dim_16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:text="Two-way DataBinding &amp; views" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/data_binding_005" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/data_binding_003" />
+            <EditText
+                android:id="@+id/etQuote"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@={quote2.quoteText}"/>
+            <!-- android:onTextChanged="@{(text, start, before, count) -> quote2.onQuoteTextChange(text)}"-->
+
+            <!--for 2way change data class quoteText to var type-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{quote2.quoteText}"
+                android:textSize="20sp"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center_horizontal"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Update Quote"
+                android:textSize="18sp"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:onClick="updateQuote" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DataBinding &amp; LiveData"
+                android:textSize="18sp"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:onClick="openLiveDataBinding" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

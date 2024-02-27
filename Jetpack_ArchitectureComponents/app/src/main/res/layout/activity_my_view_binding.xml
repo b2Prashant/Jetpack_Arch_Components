@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".D_viewBinding.a_vb.MyViewBindingActivity">
+    tools:context=".d_viewBinding.a_vb.MyViewBindingActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -23,7 +23,7 @@
             android:textStyle="bold"
             android:gravity="center"
             android:layout_gravity="center_horizontal"
-            android:text="ViewBinding with normal views" />
+            android:text="ViewBinding &amp; normal views" />
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="120dp"
@@ -54,7 +54,7 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="ViewBinding LiveData"
+            android:text="ViewBinding &amp; LiveData"
             android:textSize="18sp"
             android:layout_gravity="center"
             android:layout_marginTop="@dimen/dim_16dp"

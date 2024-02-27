@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.b2prashant.jetpackarchitecturecomponents.e_dataBindg.d_twow_ldb.LiveDBTwowayVM" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".e_dataBindg.b_onew_ldb.LiveDBOnewayActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_margin="@dimen/dim_16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:text="2way DataBinding, LiveData &amp; ViewModel" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/data_binding_007" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/data_binding_008" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@={viewModel.quoteMLD}"/>
+        <!--    <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@={viewModel.quoteMLD.author}"/>-->
+            <!--for 2way change data class quoteText to var type-->
+
+            <TextView
+                android:id="@+id/tvQuoteText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@{viewModel.quoteMLD}"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        <!--    <TextView
+                android:id="@+id/tvQuoteAuthor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="@{viewModel.quoteMLD.author}"
+                android:layout_gravity="center_horizontal" />-->
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Update Quote"
+                android:textSize="18sp"
+                android:layout_gravity="center"
+                android:onClick="@{()-> viewModel.updateQuote()}"
+                android:layout_marginTop="8dp"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MainActivity"
+                android:textSize="18sp"
+                android:layout_gravity="center"
+                android:onClick="goBackToMainActivity"
+                android:layout_marginTop="8dp"
+                />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
