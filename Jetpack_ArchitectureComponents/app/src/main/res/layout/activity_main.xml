@@ -68,5 +68,14 @@
             android:layout_gravity="center"
             android:layout_marginTop="@dimen/dim_16dp"
             android:onClick="openCustomDBActivity" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Room Database Intro"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dim_16dp"
+            android:onClick="openRoomDatabaseActivity" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

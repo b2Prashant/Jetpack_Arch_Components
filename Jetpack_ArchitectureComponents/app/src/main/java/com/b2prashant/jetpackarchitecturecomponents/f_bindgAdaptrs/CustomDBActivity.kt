@@ -12,7 +12,7 @@ class CustomDBActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_custom_dbactivity)
         val post = Post("BindingAdapters",
-            "CustomDataBinding", " https://picsum.photos/200/300")
+            "CustomDataBinding", "https://picsum.photos/200/300")
         binding.post = post
         //binding.lifecycleOwner = this
     }

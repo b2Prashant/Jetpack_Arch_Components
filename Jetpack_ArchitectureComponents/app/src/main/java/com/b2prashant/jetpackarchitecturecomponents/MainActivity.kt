@@ -11,6 +11,7 @@ import com.b2prashant.jetpackarchitecturecomponents.b_viewModel.a_withoutVM.With
 import com.b2prashant.jetpackarchitecturecomponents.d_viewBinding.E_dataBinding.DataBindgOneWActivity
 import com.b2prashant.jetpackarchitecturecomponents.d_viewBinding.a_vb.MyViewBindingActivity
 import com.b2prashant.jetpackarchitecturecomponents.f_bindgAdaptrs.CustomDBActivity
+import com.b2prashant.jetpackarchitecturecomponents.g_roomdb.a_intro.RoomDbIntroActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -53,6 +54,10 @@ class MainActivity : AppCompatActivity() {
 
     fun openCustomDBActivity(view: View) {
         startActivity(Intent(this, CustomDBActivity::class.java))
+    }
+
+    fun openRoomDatabaseActivity(view: View) {
+        startActivity(Intent(this, RoomDbIntroActivity::class.java))
     }
 
 }

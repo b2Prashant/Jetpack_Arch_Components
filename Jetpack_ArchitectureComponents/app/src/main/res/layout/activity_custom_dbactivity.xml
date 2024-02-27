@@ -26,10 +26,11 @@
 
             <ImageView
                 android:id="@+id/ivBindgAdaptr"
-                android:layout_width="300dp"
+                android:layout_width="400dp"
                 android:layout_height="360dp"
                 android:layout_gravity="center_horizontal"
                 android:scaleType="centerCrop"
+                android:src="@mipmap/ic_launcher"
                 imageFromUrl="@{post.url}"
                 />
             <!--tools:srcCompact="@tools:sample/avatars" -->
