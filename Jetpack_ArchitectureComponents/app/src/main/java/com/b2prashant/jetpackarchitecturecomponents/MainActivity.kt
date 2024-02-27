@@ -5,10 +5,12 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
-import com.b2prashant.jetpackarchitecturecomponents.A_lifeCyObs.a_noParams.LifecycleObserverActivity
-import com.b2prashant.jetpackarchitecturecomponents.C_liveData.a_mutableLD.MutableLiveDataActivity
-import com.b2prashant.jetpackarchitecturecomponents.B_viewModel.a_withoutVM.WithoutViewModelActivity
-import com.b2prashant.jetpackarchitecturecomponents.D_viewBinding.a_vb.MyViewBindingActivity
+import com.b2prashant.jetpackarchitecturecomponents.a_lifeCyObs.a_noParams.LifecycleObserverActivity
+import com.b2prashant.jetpackarchitecturecomponents.c_liveData.a_mutableLD.MutableLiveDataActivity
+import com.b2prashant.jetpackarchitecturecomponents.b_viewModel.a_withoutVM.WithoutViewModelActivity
+import com.b2prashant.jetpackarchitecturecomponents.d_viewBinding.E_dataBinding.DataBindgOneWActivity
+import com.b2prashant.jetpackarchitecturecomponents.d_viewBinding.a_vb.MyViewBindingActivity
+import com.b2prashant.jetpackarchitecturecomponents.f_bindgAdaptrs.CustomDBActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -43,6 +45,14 @@ class MainActivity : AppCompatActivity() {
 
     fun openViewBindingActivity(view: View) {
         startActivity(Intent(this, MyViewBindingActivity::class.java))
+    }
+
+    fun openDataBindingActivity(view: View) {
+        startActivity(Intent(this, DataBindgOneWActivity::class.java))
+    }
+
+    fun openCustomDBActivity(view: View) {
+        startActivity(Intent(this, CustomDBActivity::class.java))
     }
 
 }

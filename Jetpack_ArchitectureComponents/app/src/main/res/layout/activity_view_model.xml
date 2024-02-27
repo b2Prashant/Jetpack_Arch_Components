@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".B_viewModel.b_withVM.ViewModelActivity">
+    tools:context=".b_viewModel.b_withVM.ViewModelActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
