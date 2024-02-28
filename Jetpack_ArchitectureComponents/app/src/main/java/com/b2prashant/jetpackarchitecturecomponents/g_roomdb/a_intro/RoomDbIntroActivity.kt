@@ -16,7 +16,10 @@ class RoomDbIntroActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_room_db_intro)
-        database = Room.databaseBuilder(applicationContext, ContactDatabase::class.java, "contactDB").build()
+        //TODO: without singleton (bad practice - not recommended)
+        //database = Room.databaseBuilder(applicationContext, ContactDatabase::class.java, "contactDB").build()
+        //TODO: using singleton
+        database = ContactDatabase.getDatabase(this)
         GlobalScope.launch {
             database.contactDao().insertContact(Contact(0, "John", "9876533213"))
         }
